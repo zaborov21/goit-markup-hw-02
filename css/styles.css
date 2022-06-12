@@ -27,7 +27,19 @@ body {
   font-family: var(--main-font), sans-serif;
   letter-spacing: 0.03em;
   font-size: 14px;
-  line-height: 1.14;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 .list {
   list-style: none;
@@ -79,7 +91,9 @@ body {
 .footer-email:hover,
 .footer-tel:hover,
 .footer-email:focus,
-.footer-tel:focus {
+.footer-tel:focus,
+.address-footer:hover,
+.address-footer:focus {
   color: var(--accent-color);
 }
 
@@ -100,7 +114,7 @@ body {
   text-decoration: none;
   font-weight: 500;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.14;
   letter-spacing: 0.02em;
 }
 .header-link:hover,
@@ -145,7 +159,7 @@ body {
 .hero-button {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
-
+  font-family: var(--main-font), sans-serif;
   cursor: pointer;
   font-weight: 700;
   font-size: 16px;
@@ -169,7 +183,7 @@ body {
 
 .advantages .subtitle-descr {
   color: var(--description-color);
-  line-height: 1.7;
+  line-height: 1.71;
 }
 
 /* section work */
@@ -220,6 +234,7 @@ body {
 .btn {
   color: var(--primary-text-color);
 
+  font-family: var(--main-font), sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
